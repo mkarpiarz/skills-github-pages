@@ -1,13 +1,16 @@
 ---
+layout: homepage
 title: Welcome to my blog
+subtitle: Hello **World**!
+image: 
+hero_height: is-large
 ---
-
-Hello **World**!
 
 <!---
 https://jekyllrb.com/docs/posts/#displaying-an-index-of-posts
 --->
 
+<!---
 Posts:
 
 <ul>
@@ -19,3 +22,4 @@ Posts:
     </li>
   {% endfor %}
 </ul>
+--->

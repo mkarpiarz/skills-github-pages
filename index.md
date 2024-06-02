@@ -4,14 +4,17 @@ title: Welcome to my blog
 
 Hello **World**!
 
-{% for post in site.posts %}
-<article>
-   <h2>
-     <a href="{{ post.url }}">
-       {{ post.title }}
-     </a>
-   </h2>
-   <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
-   {{ post.content }}
- </article>
-{% endfor %}
+<!---
+https://jekyllrb.com/docs/posts/#displaying-an-index-of-posts
+--->
+
+Posts:
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      {{ post.excerpt }}
+    </li>
+  {% endfor %}
+</ul>
